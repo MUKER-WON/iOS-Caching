@@ -44,9 +44,10 @@ final class NetworkService {
         from url: URL,
         completion: @escaping (UIImage?) -> Void
     ) {
-        let cacheKey = url.absoluteString
+        let cacheKey = url.path.components(separatedBy: "/").last!
+        print(cacheKey)
         // 1. 메모리 캐시 확인
-        if let cachedImage = imageCache.image(
+        if let cachedImage = imageCache.getImage(
             forKey: cacheKey,
             policy: .memory
         ) {
@@ -54,7 +55,7 @@ final class NetworkService {
             return
         }
         // 2. 디스크 캐시 확인
-        if let cachedImage = imageCache.image(
+        if let cachedImage = imageCache.getImage(
             forKey: cacheKey,
             policy: .disk
         ) {

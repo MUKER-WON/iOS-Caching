@@ -84,11 +84,12 @@ final class HomeViewController: UIViewController {
     private func configureCollectionViewDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Int, Photo>(
             collectionView: collectionView,
-            cellProvider: { collectionView, indexPath, photo in
+            cellProvider: { [weak self] collectionView, indexPath, photo in
                 let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: PhotoCell.reuseIdentifier,
                     for: indexPath
                 ) as! PhotoCell
+                guard let self else { return cell }
                 cell.configure(
                     with: photo,
                     networkService: self.viewModel.networkService

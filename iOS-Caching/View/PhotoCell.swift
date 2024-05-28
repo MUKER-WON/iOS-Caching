@@ -17,6 +17,11 @@ final class PhotoCell: UICollectionViewCell {
         return view
     }()
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
