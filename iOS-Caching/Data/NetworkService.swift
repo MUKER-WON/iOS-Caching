@@ -45,7 +45,6 @@ final class NetworkService {
         completion: @escaping (UIImage?) -> Void
     ) {
         let cacheKey = url.path.components(separatedBy: "/").last!
-        print(cacheKey)
         // 1. 메모리 캐시 확인
         if let cachedImage = imageCache.getImage(
             forKey: cacheKey,

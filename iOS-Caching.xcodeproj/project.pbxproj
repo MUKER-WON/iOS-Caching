@@ -12,8 +12,8 @@
 		B552EB7B2C032D6A0013809E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB7A2C032D6A0013809E /* Photo.swift */; };
 		B552EB7D2C0348770013809E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB7C2C0348770013809E /* NetworkService.swift */; };
 		B552EB7F2C0382360013809E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB7E2C0382360013809E /* PhotoCell.swift */; };
-		B552EB812C04AEBF0013809E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB802C04AEBF0013809E /* ImageCache.swift */; };
 		B552EB832C04AFDE0013809E /* DiscardableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB822C04AFDE0013809E /* DiscardableImage.swift */; };
+		B552EB872C05A7FE0013809E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EB862C05A7FE0013809E /* ImageCache.swift */; };
 		B5FD08BB2C0044220049A7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FD08BA2C0044220049A7BA /* AppDelegate.swift */; };
 		B5FD08BD2C0044220049A7BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FD08BC2C0044220049A7BA /* SceneDelegate.swift */; };
 		B5FD08C42C0044240049A7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FD08C32C0044240049A7BA /* Assets.xcassets */; };
@@ -27,8 +27,8 @@
 		B552EB7A2C032D6A0013809E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B552EB7C2C0348770013809E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B552EB7E2C0382360013809E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		B552EB802C04AEBF0013809E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B552EB822C04AFDE0013809E /* DiscardableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableImage.swift; sourceTree = "<group>"; };
+		B552EB862C05A7FE0013809E /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B5FD08B72C0044220049A7BA /* iOS-Caching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Caching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD08BA2C0044220049A7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5FD08BC2C0044220049A7BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				B552EB7C2C0348770013809E /* NetworkService.swift */,
-				B552EB802C04AEBF0013809E /* ImageCache.swift */,
+				B552EB862C05A7FE0013809E /* ImageCache.swift */,
 				B552EB822C04AFDE0013809E /* DiscardableImage.swift */,
 			);
 			path = Data;
@@ -186,9 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B552EB872C05A7FE0013809E /* ImageCache.swift in Sources */,
 				B552EB7F2C0382360013809E /* PhotoCell.swift in Sources */,
 				B5FD08BB2C0044220049A7BA /* AppDelegate.swift in Sources */,
-				B552EB812C04AEBF0013809E /* ImageCache.swift in Sources */,
 				B552EB832C04AFDE0013809E /* DiscardableImage.swift in Sources */,
 				B5FD08BD2C0044220049A7BA /* SceneDelegate.swift in Sources */,
 				B552EB752C03137D0013809E /* HomeViewModel.swift in Sources */,
